@@ -18,4 +18,4 @@ export const getUsers = async (): Promise<User[]> => {
   return data;
 };
 
-console.log(getUsers());
+
