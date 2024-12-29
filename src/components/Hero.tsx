@@ -1,7 +1,7 @@
 export const Hero = () => {
   return (
     <section
-      className="h-dvh 2xl:h-[70vh]"
+      className="h-dvh 2xl:h-[70vh] bg-slate-800"
       id="hero"
       aria-labelledby="hero-heading"
     >

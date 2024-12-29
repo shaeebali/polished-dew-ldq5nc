@@ -12,11 +12,13 @@ return (
       {isLoading ? (
         <p>Loading User Data...</p>
       ) : (
+        <div>
         <ul>
           {data?.map((user) => (
             <li key={user.id}>id: {user.id} | Name: {user.name} | {user.email} | Status: {user.status}</li>
           ))}
         </ul>
+        </div>
       )}
     </div>
   );

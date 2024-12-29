@@ -1,6 +1,6 @@
 export const NavBar = () => {
   return(
-  <nav className="fixed">
+  <nav>
   <div id="home" className="main-menu w-full lg:w-auto flex flex-row">
     <ul className="flex lg:flex-row">
       <li>
