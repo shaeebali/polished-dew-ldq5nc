@@ -15,8 +15,8 @@ export const Hero = () => {
         >
           Welcome To The User Management Portal
         </h1>
-        <p className="text-center my-6 max-w-[60ch] text-red-500">
-          Providing Real Time Results!
+        <p className="text-center my-6 max-w-[60ch] text-red-500 text-xl">
+          Providing Real Time User Data!
         </p>        
       </div>
     </section>

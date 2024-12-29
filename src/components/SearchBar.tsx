@@ -28,11 +28,12 @@ export const SearchBar = () => {
         value={searchTerm}
         onChange={handleInputChange}
       />
+      
       </div>
       <div className="pt-4">
-      <ul className="pt-2 bg-slate-800">
-        {filteredUsers.map((user) => (
-          <li key={user.id}>id: {user.id} | Name: {user.name} | {user.email} | Status: {user.status}</li>
+      <ul>
+        {searchTerm && filteredUsers.map((user) => (
+          <li className="pt-2 bg-slate-800" key={user.id}>id: {user.id} | Name: {user.name} | {user.email} | Status: {user.status}</li>
           ))}
       </ul>
       </div>
