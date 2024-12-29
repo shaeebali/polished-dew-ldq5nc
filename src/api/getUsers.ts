@@ -1,9 +1,4 @@
-export interface User {
-  id: number;
-  name: string;
-  email: string;
-  status: string;
-}
+import  { User } from "../types/User";
 
 // export async function getUsers(): Promise<User[]> {
 //   return (
@@ -12,7 +7,7 @@ export interface User {
 
 // }
 
-//Refactored the above code to something I'm more comfortable with:
+//Interface move to /types directory as being used as an import.
 
 export const getUsers = async (): Promise<User[]> => {
   const response = await fetch("https://tech-interview-api-ultramed.vercel.app/users");

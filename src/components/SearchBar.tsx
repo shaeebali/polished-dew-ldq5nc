@@ -1,17 +1,14 @@
 import { useState } from "react";
-import { useQuery } from "react-query";
-import { getUsers, User } from "../api/getUsers";
+import { User } from "../types/User";
 
-export const SearchBar = () => {
+export const SearchBar = ({userData, setFilteredUsers}: {userData: User[] | undefined, setFilteredUsers: React.Dispatch<React.SetStateAction<User[]>>}) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const { isLoading, data } = useQuery<User[]>(["users"], getUsers);
-  const [filteredUsers, setFilteredUsers] = useState<User[]>([]);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const searchTerm = event.target.value;
     setSearchTerm(searchTerm);
 
-    const filteredUsers = isLoading ? [] : data?.filter((user) =>
+    const filteredUsers = userData?.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
    );
    setFilteredUsers(filteredUsers || []);
@@ -29,13 +26,6 @@ export const SearchBar = () => {
         onChange={handleInputChange}
       />
       
-      </div>
-      <div className="pt-4">
-      <ul>
-        {searchTerm && filteredUsers.map((user) => (
-          <li className="pt-2 bg-slate-800" key={user.id}>id: {user.id} | Name: {user.name} | {user.email} | Status: {user.status}</li>
-          ))}
-      </ul>
       </div>
     </div>
   );
