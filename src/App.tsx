@@ -5,6 +5,7 @@ import "./App.css";
 import { Hero } from "./components/Hero";
 import { NavBar } from "./components/NavBar";
 import { SearchBar } from "./components/SearchBar";
+import { UserTable } from "./components/UserTable";
 const queryClient = new QueryClient();
 
 export default function App() {
@@ -13,7 +14,8 @@ export default function App() {
       <NavBar />
       <Hero />
       <SearchBar />
-      <Users />
+      <UserTable />
+      {/* <Users /> */}
     </QueryClientProvider>
   );
 }

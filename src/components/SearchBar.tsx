@@ -22,9 +22,9 @@ export const SearchBar = () => {
       <div>
       <h1 className="pb-2">Search User Data:</h1>
       <input
-        className="pt-1 pb-1"
+        className="pt-1 pb-1 text-center"
         type="text"
-        placeholder="Type to Search..."
+        placeholder="search users..."
         value={searchTerm}
         onChange={handleInputChange}
       />
