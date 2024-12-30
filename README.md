@@ -6,7 +6,7 @@ This project, is a web application built with [Vite](https://vitejs.dev/) and Re
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Technologies](#tecnologies)
+- [Technologies](#technologies)
 - [Development](#development)
 - [License](#license)
 
