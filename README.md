@@ -91,7 +91,7 @@ Technologies used in this project:
 
 The project includes configuration files for ESLint, PostCSS, Tailwind CSS, TypeScript, and Vite. These configurations are located in the root directory and can be customized as needed.
 
-## Futuree Enhancements
+## Future Enhancements
 - Add drop down menus for filtering and sorting statuses.
 - Add more components and pages to the application as necessary.
 - Implement authentication and user management.
