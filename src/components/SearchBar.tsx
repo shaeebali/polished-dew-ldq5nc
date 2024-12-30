@@ -19,6 +19,7 @@ export const SearchBar = ({userData, setFilteredUsers}: {userData: User[] | unde
       <div>
       <h1 className="pb-6 pt-12">User Data</h1>
       <input
+        aria-label="Search for users by id, name, email, or status"
         className="pt-1 pb-1 text-center"
         type="text"
         placeholder="search users..."

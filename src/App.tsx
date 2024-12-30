@@ -10,8 +10,8 @@ export default function App() {
   
   return (
     <QueryClientProvider client={queryClient}>
-      <Hero />
-      <UserManagement />
+      <Hero aria-label="Hero section displaying the application's introductory content"/>
+      <UserManagement aria-label="User management section with search and table features"/>
     </QueryClientProvider>
   );
 }
