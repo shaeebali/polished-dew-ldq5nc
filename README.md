@@ -96,6 +96,7 @@ The project includes configuration files for ESLint, PostCSS, Tailwind CSS, Type
 - Add more components and pages to the application as necessary.
 - Implement authentication and user management.
 - Integrate a backend API for data storage and retrieval.
+- Integrate a database for storing and retrieving data from the backend
 
 ## License
 
